@@ -39,10 +39,7 @@ namespace Unagi
             {
                 File.Delete(attachMailFile);
             }
-            catch (System.Exception ex)
-            {
-
-            }
+            catch { }
         }
 
         /*
@@ -56,11 +53,9 @@ namespace Unagi
                 {
                     mailItem.Delete();
                 }
-                catch (System.Exception ex)
-                {
-
-                }
-            } else
+                catch { }
+            }
+            else
             {
                 MessageBox.Show(Culture.getText("msgConfirmReport"), "Unagi");
             }
@@ -110,7 +105,7 @@ namespace Unagi
             try
             {
                 smtpServer.Send(rptMail);
-            } catch(System.Exception ex)
+            } catch
             {
                 MessageBox.Show(Culture.getText("errFailSent"), "Unagi Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
