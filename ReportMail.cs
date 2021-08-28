@@ -87,7 +87,7 @@ namespace Unagi
                 rptMail.To.Add(toAddress);
             }
             rptMail.Subject = Culture.getText("rptSubject");
-            rptMail.Body = Culture.getText("rptBody"); ;
+            rptMail.Body = Culture.getText("rptBody");
 
             return rptMail;
         }
@@ -129,9 +129,8 @@ namespace Unagi
 
             rptMail.To = UnagiConfig.reportToMAPI;
 
-            String msgBody = String.Format(Culture.getText("rptBody"), Environment.UserDomainName.ToUpper() + "\\" + Environment.UserName);
+            rptMail.Body = Culture.getText("rptBody");
 
-            rptMail.Body = msgBody;
             rptMail.Attachments.Add(attachMailFile);
             rptMail.Importance = OlImportance.olImportanceHigh;
 
