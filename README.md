@@ -1,4 +1,5 @@
 # Unagi
+
 ## Intro
 Unagi is an Outlook add-in that allows end-users and easy reporting feature for suspicious emails, like phishig attempts. When the user either selects or opens the mail the Unagi button is available to forward the email as an attachment to the security team. It’s just one click and done. 
 
@@ -6,7 +7,7 @@ Unagi is an Outlook add-in that allows end-users and easy reporting feature for 
 - One click forwarding of an email
 - (Optionally) move reported email to trash-folder
 - Multi-language
-- Supports both outlook as-well as an SMTP server to forward the emails.
+- Supports both Outlook as-well as a SMTP server to forward the emails.
 
 ## Status
 Unagi is still in early testing. First results have been proven reliable but I would still consider this beta at-best due to its limited testing scenario’s
